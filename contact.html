@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Final Project</title>
+</head>
+<body>
+        <div id="navy">
+        <nav>
+            <div class="menu-btn" id="menuBtn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="menu-links" id="menuLinks">
+                    <li><a href="./index.html">About</a></li>
+                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </div>
+              </div>
+            <div class="logo">
+                <h1>ENSON</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <div class="main">
+                        <li id="a1"><a href="./index.html">About</a><img src="./images/White-Arrow.png" alt="arrow"></li>
+                        <div class="hide">
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Product</a></li>
+                        </div>
+                    </div>
+                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li id="a2"><img src="./images/white-bag.png" alt="bag-icon"><a href="#">Cart&nbsp;(0)</a></li>
+                </ul>
+            </div>
+            <div class="bag-hidden">
+                <li id="a2" style="list-style: none;"><img src="./images/white-bag.png" alt="bag-icon"><a href="#" style="text-decoration: none; color: white; font-weight: bold;">Cart&nbsp;(0)</a></li>
+            </div>
+        </nav>
+        </div>
+
+        <div class="contact-main">
+            <h1 style="text-align: center;">We are here <br>
+                 to talk</h1>
+                <a href="#contact"><img src="./images/icons8-down-arrow-50.png" alt=""></a>
+        </div>
+
+        <div class="contact-p">
+            <div class="c-p-1">
+                <h1>Contact</h1>
+            </div>
+            <div class="c-p-2" id="contact">
+                <span>HEADQUARTERS</span>
+                <p>3721 Single Street <br>
+                    Quincy, MA 02169</p>
+
+                 <span>CONTACTS</span>   
+                 <p>info@enson.com <br>
+                    123-456-7890</p>
+
+                    <div class="icons" style="display: flex; gap: 15px;">
+                        <li><a href="https://www.twitter.com/"><img src="./images/icons8-twitter-32.png" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/"><img src="./images/icons8-insta-30.png" alt=""></a></li>
+                        <li><a href="https://www.facebook.com/"><img src="./images/icons8-facebook-30.png" alt=""></a></li>
+                    </div>       
+            </div>
+        </div>
+        <div class="contact-form">
+            <div class="returns"><h1>Returns</h1></div>
+            <div class="c-form">
+                <form action="./backend">
+                    <label for="Name">Name*</label><br>
+                <input type="text" name="Some" id="Name" placeholder="Your Name">
+                <br>
+                <label for="L-N">Last Name*</label><br>
+                <input type="text" name="Some" id="L-N" placeholder="Your Last Name">
+                <br>
+                <label for="email">Your Email*</label><br>
+                <input type="text" name="Some" id="email" placeholder="Your Email">
+                <br>
+                <label for="Message">Message*</label><br>
+                <textarea placeholder="Your Message" id="Message" cols="30" rows="10"></textarea>
+                <br>
+                <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="map">
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25351378.974924017!2d-82.405583625!3d39.13717812771005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1704464737699!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+        <!-- footer -->
+       <footer>
+        <div class="footer-1">
+            <h1>ENSON</h1>
+            <p>info@enson.com <br>
+                123-456-7890</p>
+             <p>23 Street, <br>
+                City, Country</p>  
+                <div class="icons">
+                    <li><a href="https://www.twitter.com/"><img src="./images/icons8-twitter-32.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="./images/icons8-insta-30.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="./images/icons8-facebook-30.png" alt=""></a></li>
+                </div>     
+        </div>
+        <div class="footer-2">
+            <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Purchase & Returns</a></li>
+            </ul>
+       
+        </div>
+        <div class="footer-3">
+            <h1>Newsletter sign-up</h1>
+            <form action="./bacend">
+                <label for="email">Email Address</label><br>
+                <input type="email" name="Some" id="email" placeholder="Enter your Email">
+                <br>
+                    <button type="submit">Submit</button>
+            </form>
+        </div>
+       </footer>
+
+
+<!-- footer-end -->
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+     
+     menuBtn.addEventListener('click', () => {
+       menuBtn.classList.toggle('open');
+     });
+     </script>
+</body>
+</html>
