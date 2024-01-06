@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>The Final Project</title>
 </head>
 <body>
@@ -45,26 +46,26 @@
         </div>
 
         <div class="shop-main">
-            <h1 style="text-align: center;">Browse our <br>
+            <h1 data-aos="fade-left" style="text-align: center;">Browse our <br>
                 selection</h1>
                 <a href="#shopwela"><img src="./images/icons8-down-arrow-50.png" alt=""></a>
         </div>
 
         <div id="shopwela">
         <div class="products">
-            <div class="product-1">
+            <div class="product-1" data-aos="fade-left">
                 <img src="./images/aware.avif" alt="">
                 <p>Aware Pre-Product</p>
                <i>$35.00</i>
             </div>
 
-            <div class="product-1">
+            <div class="product-1" data-aos="fade-up">
                 <img src="./images/bancore.avif" alt="">
                 <p>Banana Core Protein Bar</p>
                <i>$2.00</i>
             </div>
 
-            <div class="product-1">
+            <div class="product-1" data-aos="fade-right">
                 <img src="./images/bulerbury.avif" alt="">
                 <p>Blueberry Protein Bar</p>
                <i>$35.00</i>
@@ -72,7 +73,7 @@
             
         </div>
 
-        <div class="products">
+        <div class="products" data-aos="fade-up">
             <div class="product-1">
                 <img src="./images/cookies.avif" alt="">
                 <p>Cookies Protein Bar</p>
@@ -95,7 +96,7 @@
 
 
         <div class="hidden"></div>
-        <!-- footer -->
+       <!-- footer -->
        <footer>
         <div class="footer-1">
             <h1>ENSON</h1>
@@ -103,11 +104,11 @@
                 123-456-7890</p>
              <p>23 Street, <br>
                 City, Country</p>  
-                <div class="icons">
-                    <li><a href="https://www.twitter.com/"><img src="./images/icons8-twitter-32.png" alt=""></a></li>
-                    <li><a href="https://www.instagram.com/"><img src="./images/icons8-insta-30.png" alt=""></a></li>
-                    <li><a href="https://www.facebook.com/"><img src="./images/icons8-facebook-30.png" alt=""></a></li>
-                </div>     
+            <div class="icons">
+                <li data-aos="fade-up"><a href="https://www.twitter.com/"><img src="./images/icons8-twitter-32.png" alt=""></a></li>
+                <li data-aos="fade-right"><a href="https://www.instagram.com/"><img src="./images/icons8-insta-30.png" alt=""></a></li>
+                <li data-aos="fade-left"><a href="https://www.facebook.com/"><img src="./images/icons8-facebook-30.png" alt=""></a></li>
+            </div>   
         </div>
         <div class="footer-2">
             <ul>
@@ -124,7 +125,7 @@
             <h1>Newsletter sign-up</h1>
             <form action="./bacend">
                 <label for="email">Email Address</label><br>
-                <input type="email" name="Some" id="email" placeholder="Enter your Email">
+                <input data-aos="fade-right" type="email" name="Some" id="email" placeholder="Enter your Email">
                 <br>
                     <button type="submit">Submit</button>
             </form>
@@ -133,23 +134,17 @@
 
 
 <!-- footer-end -->
-
-
-
-
-
-
-
-
-
-
-
     <script>
         const menuBtn = document.getElementById('menuBtn');
      
      menuBtn.addEventListener('click', () => {
        menuBtn.classList.toggle('open');
      });
+     </script>
+     </script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+     AOS.init();
      </script>
 </body>
 </html>

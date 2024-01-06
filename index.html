@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>The Final Project</title>
 </head>
 <body>
@@ -62,27 +63,27 @@
                 <img src="./images/imgb-1.avif" alt="">
             </div>
             <div class="about-2">
-                <span>About Us</span>
-                <h1>Born out of <br>obsession</h1>
+                <span data-aos="fade-right">About Us</span>
+                <h1 data-aos="flip-down">Born out of <br>obsession</h1>
                 <p>Enson was created by people who care about how their body looks and feels. Our products are made by the rebels, who do not want to be limited by poor health and lack of power. That is why Enson is the child of our passion for fitness: we are strong-headed, so having a strong body to match that is the ultimate goal we are striving to reach every day.</p>
-                <a href="./blog.html">Our Blog</a> <a href="#">Learn More</a>
+                <a data-aos="fade-down" href="./blog.html">Our Blog</a> <a data-aos="fade-down" href="#">Learn More</a>
             </div>
         </div>
 
        <div class="body">
-        <h1>Food <br>
+        <h1 data-aos="fade-left">Food <br>
             your body <br> 
             craves for</h1>
        </div>
 
        <div class="product">
-        <h1>Our Product</h1>
+        <h1 data-aos="fade-up">Our Product</h1>
 
         <div class="product-ad">
-        <div class="p1"><img src="./images/aware.avif" alt="">
+        <div class="p1"><img src="./images/aware.avif" data-aos="zoom-in" alt="">
             <p>PRE-WORKOUT</p>
         </div>
-        <div class="p2"><img src="./images/cake.avif" alt="">
+        <div class="p2"><img src="./images/cake.avif"  data-aos="zoom-in" alt="">
         <p>PROTEIN BAR</p></div>
         </div>
         <div class="last-p">
@@ -95,7 +96,7 @@
         <div class="chco-1">
             <img src="./images/chco.avif" alt="">
         </div>
-        <div class="chco-2">
+        <div class="chco-2"  data-aos="fade-right">
             <span id="s1">PRODUCTS</span>
             <h1>Created with <br>you in mind</h1>
             <p>Our obsession has led us to discovering the best products for any body type and any goal your mind might think of. Made with the best ingredients, Enson products make sure that you can reach your full potential – without having to sacrifice the taste.</p>
@@ -105,9 +106,9 @@
 
        <div class="test">
         <div class="textheading">
-            <h1>Testimonials</h1>
+            <h1 data-aos="fade-up">Testimonials</h1>
         </div>
-        <div class="maintext">
+        <div class="maintext" data-aos="fade-up">
             <div class="text-1">
                 <h5>FRANK VYNEHALL</h5>
                 <p>“I like muscles, and I am a buff dude. Girls love it. If any cannibal would like to eat me, they could make a good strong steak and be like "OMG, why does this taste so good?" Enson, that is why."</p>
@@ -128,9 +129,9 @@
              <p>23 Street, <br>
                 City, Country</p>  
             <div class="icons">
-                <li><a href="https://www.twitter.com/"><img src="./images/icons8-twitter-32.png" alt=""></a></li>
-                <li><a href="https://www.instagram.com/"><img src="./images/icons8-insta-30.png" alt=""></a></li>
-                <li><a href="https://www.facebook.com/"><img src="./images/icons8-facebook-30.png" alt=""></a></li>
+                <li data-aos="fade-up"><a href="https://www.twitter.com/"><img src="./images/icons8-twitter-32.png" alt=""></a></li>
+                <li data-aos="fade-right"><a href="https://www.instagram.com/"><img src="./images/icons8-insta-30.png" alt=""></a></li>
+                <li data-aos="fade-left"><a href="https://www.facebook.com/"><img src="./images/icons8-facebook-30.png" alt=""></a></li>
             </div>   
         </div>
         <div class="footer-2">
@@ -148,7 +149,7 @@
             <h1>Newsletter sign-up</h1>
             <form action="./bacend">
                 <label for="email">Email Address</label><br>
-                <input type="email" name="Some" id="email" placeholder="Enter your Email">
+                <input data-aos="fade-right" type="email" name="Some" id="email" placeholder="Enter your Email">
                 <br>
                     <button type="submit">Submit</button>
             </form>
@@ -163,6 +164,10 @@
 menuBtn.addEventListener('click', () => {
   menuBtn.classList.toggle('open');
 });
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
 </script>
 </body>
 </html>

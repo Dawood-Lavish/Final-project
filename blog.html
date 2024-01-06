@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>The Final Project</title>
 </head>
 <body>
@@ -45,7 +46,7 @@
         </div>
 
         <div class="blog-main">
-            <h1 style="text-align: center;">Learn to take <br> 
+            <h1 data-aos="fade-down" style="text-align: center;">Learn to take <br> 
                 care of yourself</h1>
                 <a href="#blog"><img src="./images/icons8-down-arrow-50.png" alt=""></a>
         </div>
@@ -53,17 +54,17 @@
         <div id="blog">
        <div class="blog-product">
         <div class="blog-heading">
-            <h1>Blog</h1>
+            <h1 data-aos="fade-left">Blog</h1>
         </div>
         <div class="b-product">
-            <div class="p-pro-1">
+            <div class="p-pro-1" data-aos="fade-up">
                 <img src="./images/p-1.avif" alt="">
                 <h4>products must You have</h4>
                 <p style="color: rgb(37, 35, 35);">This is the space for a short but eye-catching description of what your blog post will be covering.</p>
                 <i style="color: rgb(37, 35, 35);">9/17/21  1 min read</i>
             </div>
 
-            <div class="p-pro-2">
+            <div class="p-pro-2" data-aos="fade-up">
                 <img src="./images/p-2.avif" alt="">
                 <h4>products must You have</h4>
                 <p style="color: rgb(37, 35, 35);">This is the space for a short but eye-catching description of what your blog post will be covering.</p>
@@ -72,14 +73,14 @@
         </div>
 
         <div class="b-product">
-            <div class="p-pro-1">
+            <div class="p-pro-1" data-aos="fade-up">
                 <img src="./images/p-3.avif" alt="">
                 <h4>products must You have</h4>
                 <p style="color: rgb(37, 35, 35);">This is the space for a short but eye-catching description of what your blog post will be covering.</p>
                 <i style="color: rgb(37, 35, 35);">9/6/21  1 min read</i>
             </div>
 
-            <div class="p-pro-2">
+            <div class="p-pro-2" data-aos="fade-up">
                 <img src="./images/p-4.avif" alt="">
                 <h4>products must You have</h4>
                 <p style="color: rgb(37, 35, 35);">This is the space for a short but eye-catching description of what your blog post will be covering.</p>
@@ -88,7 +89,7 @@
         </div>
        </div>
         </div>
-        <!-- footer -->
+       <!-- footer -->
        <footer>
         <div class="footer-1">
             <h1>ENSON</h1>
@@ -96,11 +97,11 @@
                 123-456-7890</p>
              <p>23 Street, <br>
                 City, Country</p>  
-                <div class="icons">
-                    <li><a href="https://www.twitter.com/"><img src="./images/icons8-twitter-32.png" alt=""></a></li>
-                    <li><a href="https://www.instagram.com/"><img src="./images/icons8-insta-30.png" alt=""></a></li>
-                    <li><a href="https://www.facebook.com/"><img src="./images/icons8-facebook-30.png" alt=""></a></li>
-                </div>     
+            <div class="icons">
+                <li data-aos="fade-up"><a href="https://www.twitter.com/"><img src="./images/icons8-twitter-32.png" alt=""></a></li>
+                <li data-aos="fade-right"><a href="https://www.instagram.com/"><img src="./images/icons8-insta-30.png" alt=""></a></li>
+                <li data-aos="fade-left"><a href="https://www.facebook.com/"><img src="./images/icons8-facebook-30.png" alt=""></a></li>
+            </div>   
         </div>
         <div class="footer-2">
             <ul>
@@ -117,7 +118,7 @@
             <h1>Newsletter sign-up</h1>
             <form action="./bacend">
                 <label for="email">Email Address</label><br>
-                <input type="email" name="Some" id="email" placeholder="Enter your Email">
+                <input data-aos="fade-right" type="email" name="Some" id="email" placeholder="Enter your Email">
                 <br>
                     <button type="submit">Submit</button>
             </form>
@@ -126,23 +127,17 @@
 
 
 <!-- footer-end -->
-
-
-
-
-
-
-
-
-
-
-
     <script>
         const menuBtn = document.getElementById('menuBtn');
      
      menuBtn.addEventListener('click', () => {
        menuBtn.classList.toggle('open');
      });
+     </script>
+     </script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+     AOS.init();
      </script>
 </body>
 </html>
